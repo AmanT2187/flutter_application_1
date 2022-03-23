@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'register.dart';
-
-import 'login.dart';
+import 'AppBars/bottom_bar_main.dart';
+// import 'Screens/register.dart';
+// import 'Screens/login.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: MyLogin(),
-    routes: {
-      'register': (context) => MyRegister(),
-      'login': (context) => MyLogin(),
-    },
+    home: BottomBar(),
   ));
 }
